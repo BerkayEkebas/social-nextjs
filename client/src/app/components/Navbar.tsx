@@ -5,7 +5,7 @@ import MobileMenu from './MobileMenu'
 import Image from 'next/image'
 import { ClerkLoaded, ClerkLoading } from '@clerk/nextjs'
 import { SignedIn, SignedOut } from '@clerk/clerk-react'
-import { UserButton } from '@clerk/nextjs/app-beta'
+import { UserButton } from '@clerk/nextjs'
 
 const Navbar = () => {
   return (

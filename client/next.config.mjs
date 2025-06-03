@@ -4,6 +4,18 @@ const nextConfig = {
     reactCompiler: true,
     ppr: 'incremental'
   },
+  images:{
+    remotePatterns:[
+      {
+        protocol:'https',
+        hostname: "images.pexels.com"
+      },
+            {
+        protocol:'https',
+        hostname: "encrypted-tbn0.gstatic.com"
+      }
+    ]
+  }
 };
 
 export default nextConfig;
