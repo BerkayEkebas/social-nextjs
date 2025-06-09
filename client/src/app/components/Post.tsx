@@ -23,7 +23,7 @@ const Post = () => {
             {/* DESC */}
             <div className='flex flex-col gap-4'>
                 <div className='w-full min-h-96 relative'>
-                    <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM87kFqCw0Dz0UTUpb3WDDkmTBc3KcnIJe7Q&s'
+                    <Image src='https://images.pexels.com/photos/29213973/pexels-photo-29213973/free-photo-of-sisli-sabah-manzarasiyla-pitoresk-koy.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
                         alt=''
                         fill
                         className='object-cover rounded-md' />
