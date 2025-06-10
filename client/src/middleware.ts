@@ -10,5 +10,5 @@ export default withClerkMiddleware((req) => {
 });
 
 export const config = {
-  matcher: ['/settings/:path*', '/api/:path*'],
+  matcher: ['/((?!_next|.*\\..*).*)'],
 };

@@ -9,12 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.29.2",
+    "@prisma/client": "^5.15.0",
     "babel-plugin-react-compiler": "^0.0.0-experimental-938cd9a-20240601",
-    "prisma": "^6.9.0",
     "next": "^14.2.0",
+    "prisma": "^5.15.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@clerk/nextjs": "^4.29.2"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",
