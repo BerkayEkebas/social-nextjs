@@ -1,14 +1,13 @@
-import { withClerkMiddleware } from '@clerk/nextjs/server';
+import { authMiddleware } from "@clerk/nextjs";
 
-const isProtectedRoute = (pathname: string) => pathname.startsWith('/settings');
-
-export default withClerkMiddleware((req) => {
-  if (isProtectedRoute(req.nextUrl.pathname)) {
-    // Burada auth koruması mantığını kendin ekleyebilirsin
-    // Örneğin kullanıcı giriş yapmamışsa 401 dönebilirsin
-  }
+export default authMiddleware({
+  // Sadece "/settings" gibi korumalı rotaları kontrol et
+  publicRoutes: (req) => {
+    const pathname = req.nextUrl.pathname;
+    return !pathname.startsWith("/settings");
+  },
 });
 
 export const config = {
-  matcher: ['/((?!_next|.*\\..*).*)'],
+  matcher: ['/((?!_next|.*\\..*).*)'], // _next, statik dosyalar hariç tut
 };
