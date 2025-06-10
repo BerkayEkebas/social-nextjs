@@ -17,6 +17,7 @@ model User {
   id                     String          @id // clerk string kullaniyor 
   username               String          @unique
   avatar                 String? // soru isareti opstional
+  cover                  String?
   name                   String?
   surname                String?
   description            String?
