@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import Ad from "./Ad";
 import ProfileCard from "./ProfileCard";
+import Ad from "../Ad";
+
 
 
 
